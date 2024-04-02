@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+@mixin tablet {
+	@media screen and (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+@mixin responsive {
+	@media screen and (min-width: $tablet-breakpoint),
+		screen and (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+
+// flex style
+@mixin flex {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+// border style
+@mixin border {
+	border: 1px solid $secondary_color_cloud;
+	box-shadow: 1px 1px $secondary_color_cloud;
+}
