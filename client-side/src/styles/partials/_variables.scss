@@ -1,0 +1,24 @@
+//Breakpoints
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px; 
+
+
+// Colors
+// Primary colors
+$primary_color: #07588B; // Capstone:  Global text color
+$primary_color_light-blue: #27AEE8; // Capstone:  Global text color
+$primary_color_white: #ffffff; // White:  Global white color
+
+//Secondary colors
+$secondary_color_redish: #BF0453; // Slate:  Table column headers & placeholder text
+$secondary_color_yellow: #e29b31;
+$secondary_color_black: #000000; // Cloud:  Outlines, dividers, borders, table sorting icon
+
+// Background colors
+$background_color_brown: #C67B0B; // brown:  Top navigation header background,CTA button hover state background
+$background_color_light-grey: #b2c4d6; // Light-Grey:  Page background,table column header background, CTA background
+
+// Supporting colors
+$supporting_color_green: #158463; // Green:  “In stock” label
+$supporting_color_red: #c94515; // Red:  “Out of stock” label, error states & delete icon

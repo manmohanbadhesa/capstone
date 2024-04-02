@@ -1,0 +1,189 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.payment {
+
+    @include tablet {
+        margin: 1rem 5rem;
+    }
+
+    @include desktop {
+        margin: 1rem 12rem;
+    }
+
+    &-header {
+        display: flex;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $secondary_color_redish;
+        padding: 2rem 0.5rem;
+    }
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+
+    @include tablet {
+        margin: 0rem 8rem;
+    }
+
+    @include desktop {
+        margin: 0rem 10rem;
+    }
+
+
+    &__payment {
+        width: 90%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name-inputs {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__names {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.75rem;
+
+        &-input {
+            padding: 0.625rem;
+            border: 1px solid gray;
+            border-radius: 0.75rem;
+
+            &:hover {
+                outline: none;
+                border: 2px solid $secondary_color_yellow;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid $primary_color;
+            }
+        }
+    }
+
+    &__email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-right: 0.75rem;
+
+        &-input {
+            padding: 0.625rem;
+            border-radius: 0.75rem;
+            border: 1px solid gray;
+
+            &:hover {
+                outline: none;
+                border: 2px solid $secondary_color_yellow;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid $primary_color;
+            }
+        }
+    }
+
+    &__phone {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        &-input {
+            padding: 0.625rem;
+            border-radius: 0.75rem;
+            border: 1px solid gray;
+
+            &:hover {
+                outline: none;
+                border: 2px solid $secondary_color_yellow;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid $primary_color;
+            }
+        }
+    }
+
+    &__label {
+        display: flex;
+        margin-bottom: 0.5rem;
+        color: $primary_color;
+
+        @include tablet {
+            display: flex;
+        }
+
+    }
+
+    &__payment-options {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__pay {
+
+
+        &-link {
+            height: 3rem;
+            padding: 0.25rem;
+            border: 1px solid gray;
+            border-radius: 0.5rem;
+            transition: box-shadow 0.25s ease;
+
+            &:hover {
+                outline: none;
+                border: 2px solid $secondary_color_yellow;
+                box-shadow: 2px 0px 20px rgba(5, 6, 100, 0.3);
+            }
+
+            @include tablet {
+                height: 4rem;
+            }
+
+            
+        }
+    }
+
+    &-submit {
+        margin-top: 2rem;
+
+
+        &__button {
+            list-style-type: none;
+            text-decoration: none;
+            color: $primary_color_white;
+            background-color: rgb(48, 163, 48);
+            padding: 0.5rem 1.5rem;
+            border-radius: 1.5rem;
+
+            &:hover {
+                border: 2px solid $supporting_color_green;
+                box-shadow: 2px 0px 20px rgba(3, 78, 22, 0.3);
+                padding-left: 2rem;
+            }
+        }
+    }
+}

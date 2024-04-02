@@ -1,0 +1,116 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contributions {
+    display: flex;
+
+    &__container {
+        width: 100%;
+        margin: 1rem;
+        // border-bottom: 0.125rem solid $primary_color_light-blue;
+    
+        @include tablet {
+            margin: 1rem 5rem;
+        }
+    
+        @include desktop {
+            margin: 1rem 10rem;
+        }
+    }
+
+    &__title {
+        display: flex;
+        font-size: 1.75rem;
+        font-family: "Imbue";
+        color: $primary_color;
+    }
+}
+
+.contributors__list {
+    max-width: 100%;
+
+    @include tablet {
+        margin-left: 16rem;
+    }
+
+    @include desktop {
+        margin-left: 20rem;
+    }
+}
+
+.contributors {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0.25rem 0rem;
+    border: 2px solid $primary_color_light-blue;
+    border-radius: 0.5rem;
+
+    @include tablet {
+        border: none;
+        border-bottom: 2px solid $primary_color_light-blue;
+        border-radius: 0;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &-emoji {
+        width: 30%;
+    }
+
+    &__image{
+        height: 4rem;
+    }
+
+    &__name {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Permanent Marker', cursive;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $primary_color_light-blue;
+
+        @include tablet {
+            font-size: 1.25rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__amount {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lilita One";
+        font-size: 1.75rem;
+        color: $primary_color_light-blue;
+
+        @include tablet {
+            font-size: 1.25rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+}
